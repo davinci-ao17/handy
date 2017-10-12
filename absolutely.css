@@ -6,6 +6,7 @@ body {
 	/* toe te voegen */
 }
 .all {
+	position: relative;
 	text-align : left;
 	width : 700px;
 	margin : 100px auto;
@@ -14,3 +15,161 @@ body {
 	border : 4px solid red;
 }
 
+.blok {
+	background-color: rgba(255,255,255,0.4);
+	padding: 2px 0 2px 10px;
+	margin-top: 30%;
+}
+
+h1 {
+	padding-top: 10px;
+	line-height: 6px;
+	font-size: 22px;
+}
+
+.on-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.on-menu:before {
+    content: "";
+}
+
+.on-menu:focus {
+    pointer-events: none;
+}
+
+.on-menu:hover .on-menu-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.on-menu-content {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+}
+
+.menu1 {
+    position: absolute;
+    margin-left: 10%;
+    background-color: white;
+    list-style-type: none;
+    padding: 0;
+    margin-top: -25%;
+}
+
+li {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom:2px solid black;
+    padding: 6px;
+}
+
+li:hover {
+    background-color: #ffff80;
+}
+
+li > a {
+    text-decoration: none;
+}
+
+li.b1 {
+    border-top: 2px solid black;
+}
+
+#title {
+	position: absolute; 
+	bottom: 610px;
+	left: 10px;
+}
+
+#saw {
+	position: absolute;
+	bottom: 410px;
+	left: -50px;
+}
+
+#hammer {
+	position: absolute;
+	left: 500px;
+	bottom: 510px;
+}
+
+#pincers {
+	position: absolute;
+	left: 560px;
+	bottom: 320px;
+}
+
+#screwdriver {
+	position: absolute;
+	left: 560px;
+	bottom: 450px;
+}
+
+#toolbox {
+	top: 190px;
+	left: 200px;
+}
+
+#saw:hover {
+	left: -30px;
+}
+
+#hammer:hover {
+	bottom: 490px;
+	left: 480px;
+}
+
+#pincers:hover {
+	left: 540px;
+}
+
+#screwdriver:hover {
+	left: 540px;
+}
+
+#humanfactor {
+    color: blue;
+}
+ 
+.humanfactor {
+ 	background-color: white;
+ 	border: 2px solid blue;
+ 	border-radius: 10px;
+ 	width: 220%;
+ 	padding: 5px;
+ 	position: absolute;
+}
+
+nav {
+	position: fixed;
+	background: linear-gradient(black, rgba(255, 255, 255, 0.5));
+	width: 100%;
+	height: 22px;
+	top: 0;
+	background-color: black;
+	z-index: 1;
+	right: 0;
+}
+
+nav:hover {
+	background-color: white;
+	background: white;
+}
+
+nav:hover a {
+	color: black;
+}
+
+nav > a {
+	color: lightgrey;
+	text-decoration: none;
+	margin-right: 41px;
+	font-weight: bold;
+}
