@@ -5,12 +5,165 @@ body {
 	background-color : black;
 	/* toe te voegen */
 }
+p {
+	margin:0px;
+}
 .all {
 	text-align : left;
-	width : 700px;
+	width : 766px;
 	margin : 100px auto;
 	min-height : 600px;
 	background-image : url(bg.jpg);
 	border : 4px solid red;
 }
+#title {
+	position: relative;
+	bottom: 170px;
+}
+#title:hover {
+	position: relative;
+	bottom: 160px;
+	left: 10px;
+}
+#hammer {
+	position: relative;
+	bottom: 75px;
+}
+#hammer:hover {
+	position: relative;
+	bottom: 65px;
+}
+#saw {
+	position: relative;
+	right: 350px;
+	top: 50px;
+}
+#saw:hover {
+	position: relative;
+	right: 330px;
+	top: 50px;
+}
+#pincers {
+	position: relative;
+	left: 575px;
+}
+#pincers:hover {
+	position: relative;
+	left: 565px;
+}
+#screwdriver {
+	position: relative;
+	left: 375px;
+	bottom:125px;
+}
+#screwdriver:hover {
+	position: relative;
+	left: 365px;
+	bottom:125px;
+}
+#toolbox {
+	position: relative;
+	right: 175px;
+}
+#toolbox  ul {
+	position: absolute;
+	right: 120px;
+	list-style: none;
+	display: none;
+}
+#toolbox:hover ul{
+	display: block;
+}
 
+#toolbox ul li {
+	background-color:#fff;
+	border:2px solid #000;
+	width: 100px;
+	font-size: 15px;
+	bottom: 70px;
+	right: 30px;
+	position: relative;
+	padding:2px;
+}
+#toolbox ul li:hover {
+	background-color: #F2F5A9;
+	color:#000;
+}
+
+
+#toolbox ul a {
+	text-decoration: none;
+	font-size: 15px;
+}
+#toolbox ul a:hover {
+	text-decoration: none;
+	color: #000;
+}
+#article {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding:10px;
+	font-size: 15px;
+}
+#menu {
+	background-image: url(bar1.png);
+	height: 25px;
+	width: 100%;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+#menu:hover{
+	background-image: url(bar2.png);
+	height: 25px;
+	width: 100%;
+	position: fixed;
+	color: #000;
+	left: 0px;
+	top: 0px;
+	z-index: 2;
+}
+
+#menu ul li a {
+	color: #9e9e9e;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	bottom:10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#menu ul li:hover a{
+	color: #000;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	bottom:10px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+#menu:hover a {
+	color: #000000;
+}
+#menu ul {
+	list-style: none;
+}
+#menu ul li {
+	display: inline-block;
+}
+#humanfactor {
+	color:blue;
+}
+#humanfactor  span{
+	display:none;
+}
+#humanfactor:hover span{
+	display:block;
+	position: absolute;
+	background-color:#fff;
+	border:1px solid blue;
+	width: 235px;
+	padding:5px;
+	left:950px;
+}
