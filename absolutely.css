@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+	text-decoration: none;
 }
 body {
 	text-align : center;
@@ -20,9 +21,9 @@ nav:hover {
      background-color: white;
      background: white;
      height: 21px;
- }
+}
 
- nav {
+nav {
  	position: fixed;
     background: linear-gradient(black, rgba(255, 255, 255, 0.5));
     width: 100%;
@@ -35,6 +36,10 @@ nav:hover {
  
  nav:hover a {
      color: black;
+ }
+
+ ul {
+ 	list-style-type: none;
  }
 
 .all {
@@ -53,7 +58,7 @@ nav:hover {
 }
 
 #hammer:hover {
-	left: 1080px;
+	top: 70px;
 }
 
 #hammer {
@@ -62,16 +67,27 @@ nav:hover {
 	left: 1090px;
 }
 
+#saw:hover {
+	left: 560px;
+}
 #saw {
 	position: absolute;
 	top: 210px;
 	left: 550px;
 }
 
+#pincers:hover {
+	left: 1145px;
+}
+
 #pincers {
 	position: absolute;
 	top: 450px;
 	left: 1155px;
+}
+
+#screwdriver:hover {
+	left: 1145px;
 }
 
 #screwdriver {
@@ -84,9 +100,75 @@ nav:hover {
 	position: absolute;
 	top: 350px;
 	left: 790px;
+	outline: none;
+	z-index: 1;
 }
 
+#toolbox:hover #toolbox1 {
+	visibility: visible;
+	opacity: 1;
+}
+
+#toolbox:before {
+    content: "";
+}
+
+#toolbox1 {
+    opacity: 1;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 140px;
+    text-decoration: none;
+}
+
+#toolbox ul li {
+	background-color:#fff;
+ 	border:2px solid black;
+ 	width: 100px;
+ 	bottom: 70px;
+ 	right: 30px;
+	position: relative;
+ 	padding:2px;
+}
+
+#toolbox ul li:hover {
+	background-color: #FFFFAA
+}
+
+
 #humanfactor {
+    position: relative;
+    display: inline-block;
+    color: blue;
+    outline: none;
+}
+
+#humanfactor:before {
+    content: "";
+}
+
+#humanfactor:hover #humanfactor1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#humanfactor1 {
+    top: 20px;
+    left: 0;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0.5s;
+    background-color: white;
+    color: black;
+    list-style-type: none;
+    padding: 5px;
+    width: 200px;
+    border: 2px solid blue;
+    border-radius: 10px;
 }
 
 .tekst {
@@ -94,8 +176,4 @@ nav:hover {
 	top: 450px;
 	background-color: rgba(255,255,255,0.3);
 	height: 365px;
-}
-
-span:hover, .toolbox {
-	display: block;
 }
