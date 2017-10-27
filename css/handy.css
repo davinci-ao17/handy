@@ -1,0 +1,146 @@
+body {
+	text-align : center;
+	font-family : Tahoma;
+	font-size : 14px;
+	background-color : black;
+	margin: 0px;
+	/* toe te voegen */
+}
+.all {
+	text-align : left;
+	width : 700px;
+	margin : 100px auto;
+	min-height : 600px;
+	background-image : url("../img/bg.jpg");
+	border : 4px solid red;
+}
+.text {
+	background-color:rgba(255, 255, 255, 0.5);
+	padding: 5px;
+}
+#title {
+position: absolute;
+top: 20px;
+}
+#saw {
+position: absolute;
+top: 100px;
+right: 480px;
+}
+#hammer {
+position: relative;
+bottom: 35px;
+left: 245px;
+}
+#pincers {
+position: relative;
+left: 220px;
+top: 62px;
+}
+#screwdriver {
+position: relative;
+left: 115px;
+bottom: 2px;
+}
+#toolbox {
+position: relative;
+left: 110px;
+bottom: 20px;
+}
+nav {
+background-image: url("../img/bar1.png");
+width: 100%;
+padding-bottom: 5px;
+background-color: black;
+position: fixed;
+top: 0px;
+}
+nav a {
+	color: #999999;
+	text-decoration: none;
+	text-align: center;
+	font-family: sans-serif;
+	padding: 0 16px;
+}
+ul {
+	display: none;
+	position: absolute;
+	top: 69px;
+	left: 60px;
+}
+h1,p {
+	font-family: sans-serif;
+}
+#saw:hover {
+	top: 105px
+}
+#title:hover {
+	top: 25px;
+}
+#hammer:hover {
+	bottom: 30px;
+}
+#screwdriver:hover {
+	left: 115px;
+	top: 3px;
+}
+#pincers:hover {
+	left: 220px;
+	top: 67px;
+}
+#toolbox:hover ul {
+	display: block;
+}
+li {
+	display: block;
+	background-color: white;
+	width: 85px;
+	padding: 5px;
+	border: solid 1px black;
+}
+li a {
+	text-decoration: none;
+	color: black;
+}
+div #toolbox {
+	width: 256px;
+}
+li:hover {
+	background-color: lightyellow;
+}
+span#info {
+	display: none;
+}
+p {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+}
+span#humanfactor {
+	color: blue;
+	cursor: default;
+}
+span#humanfactor:hover span#info{
+display: block;
+color: black;
+background-color: white;
+position: absolute;
+top: 575px;
+left: 915px;
+height: 55px;
+width: 210px;
+padding-left: 10px;
+padding-top: 5px;
+border: solid 3px blue;
+border-radius: 12px;
+}
+h1 {
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+}
+nav:hover {
+	background-image: url("../img/bar2.png");
+	background-color: white;
+}
+nav:hover a {
+	color: black;
+}
