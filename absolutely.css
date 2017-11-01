@@ -36,14 +36,9 @@ h1 {
     content: "";
 }
 
-.humanfactor2:focus {
-    pointer-events: none;
-}
-
 .humanfactor2:hover .humanfactor2-content {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
 }
 
 .humanfactor2-content {
@@ -61,7 +56,7 @@ h1 {
     background-color: white;
     list-style-type: none;
     padding: 0;
-    margin-top: -25%;
+    margin-top: 25%;
 }
 
 li {
@@ -92,25 +87,29 @@ li.b1 {
 #saw {
 	position: absolute;
 	bottom: 410px;
-	left: -50px;
+	left: 10px;
+	transition: 0.15s
 }
 
 #hammer {
 	position: absolute;
 	left: 500px;
 	bottom: 510px;
+	transition: 0.15s
 }
 
 #pincers {
 	position: absolute;
 	left: 560px;
 	bottom: 320px;
+	transition: 0.15s
 }
 
 #screwdriver {
 	position: absolute;
 	left: 560px;
 	bottom: 450px;
+	transition: 0.15s
 }
 
 #toolbox {
@@ -119,7 +118,7 @@ li.b1 {
 }
 
 #saw:hover {
-	left: -30px;
+	left: 20px;
 }
 
 #hammer:hover {
