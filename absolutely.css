@@ -85,24 +85,29 @@ nav > a {
 
 #saw:hover{
     left: 560px;
+    transition: 0.15s;
 }
 
 #hammer:hover{
     left: 1095px;
     top: 45px;
+    transition: 0.15s;
 }
 
 #pincers:hover{
     left: 1165px;
+    transition: 0.15s;
 }
 
 #screwdriver:hover{
     left: 1165px;
+    transition: 0.15s;
 }
 
 
 #toolbox:hover{
     transform:scale(1.1,1.1);
+    transition: 0.15s;
 }
 
 #toolbox{
